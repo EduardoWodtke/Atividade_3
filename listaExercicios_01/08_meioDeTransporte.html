@@ -7,9 +7,18 @@
 
     //Entrada
 
+    const precoCombustivel = Number(prompt("preço combustivel"))
+
+    const qtdLitros = Number(prompt("quantos litros"))
+
+    const precoTransportP = Number(prompt("preço do transporte público"));
 
     //Processamento
 
+    const precoMultCombus = precoCombustivel * qtdLitros;
+
+    (precoMultCombus > precoTransportP) ? document.write("Busão pai")
+    : document.write("vai de carro na fé");
     
     //Saída
 

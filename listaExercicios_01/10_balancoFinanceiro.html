@@ -11,9 +11,22 @@
 
     //Entrada
 
+    const aguaD = Number(prompt("Despesa de agua"))
+
+    const energiaD = Number(prompt("despesas de energia"))
+
+    const telefoneD = Number(prompt("despesas de telefone"))
+
+    const superMercadoD = Number(prompt("depesas de Supermercado"))
+
+    const remuneração = Number(prompt("seu salario"));
 
     //Processamento
 
+    const valorDTotal = aguaD + energiaD + telefoneD + superMercadoD;
+
+    (remuneração > valorDTotal) ?  document.write(`Parabens voce pagou a suas contas e sobrou R$${remuneração - valorDTotal}`)
+    : document.write(`TA COM O NOME SUJO NO SERASA R$${remuneração - valorDTotal}`);
     
     //Saída
     

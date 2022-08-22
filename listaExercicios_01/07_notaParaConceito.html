@@ -10,19 +10,18 @@
   // Entre 5.9 e zero            E
 
   //Entrada
-  const suaNota = Number(prompt("Informe sua nota:"))
+  let suaNota = Number(prompt("Informe sua nota:"));
 
-  let resultado;
     //Processamento
-    suaNota = 10 || suaNota <= 9.9
+    suaNota === 10 && suaNota >= 9
     ? document.write("Seu conceito sera A!")
-    : suaNota <= 8.9 
+    : suaNota <= 8.9 && suaNota >= 8  
     ? document.write("Seu conceito sera B!")
-    : suaNota <= 7.9 
+    : suaNota <= 7.9 && suaNota >= 7
     ? document.write("Seu conceito sera C!")
-    : suaNota <= 6.9 
+    : suaNota <= 6.9 && suaNota >= 6
     ? document.write("Seu conceito sera D!")
-    : suaNota <= 5.9 
+    : suaNota <= 5.9 && suaNota >= 5
     ? document.write("Seu conceito sera E!")
     : document.write("ce é burro fi?");
 

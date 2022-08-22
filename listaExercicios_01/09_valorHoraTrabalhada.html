@@ -9,9 +9,17 @@
 
     //Entrada
 
+    const horasTrabalhadas = Number(prompt("horas trabalhadas"))
+
+    const horasSalario = Number(prompt("salario em horas"));
 
     //Processamento
 
+    const salario = horasTrabalhadas * horasSalario;
+
+     (horasTrabalhadas <= 45) ? document.write("Não ha adicional")
+    :(horasTrabalhadas <= 60) ? document.write(`havera um adicional ${(20 / 100) * salario + salario}`)
+    : document.write(`havera um adicional ${(30 / 100) * salario + salario}`);
     
     //Saída
 
